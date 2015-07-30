@@ -1,0 +1,45 @@
+/* add custom styles */
+
+h1, input, button {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin-top: 3em;
+}
+
+input, button, select {
+  display: block;
+  margin: 0 auto;
+}
+
+generateButton {
+  width: 100%;
+}
+
+input[type="text"], select, #generateButton {
+  display: block;
+  background: transparent;
+  margin: 0;
+  width: 150px;
+  height: 35px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+/*select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }*/
