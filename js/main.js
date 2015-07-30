@@ -2,22 +2,24 @@
 
 var answer = 0;
 
-$(document).on('ready', function() {
+window.onload = function() {
   console.log('sanity check!');
-  var myButton = document.getElementById(generateButton);
-  myButton.onclick = myFunction () {
-    console.log('firing');
-    var amount = document.getElementById(amount);
-    parseInt(amount);
-console.log(amount);
-    var tip = document.getElementById(tip);
-    parseInt(tip);
-    console.log(tip);
-    tipAmount = (amount * tip);
-    tipAmount.toFixed(2);
-    document.getElementById('answer').innerHTML = tipAmount;
-
   };
 
-});
+var myButton = document.getElementById("generateButton");
+
+myButton.onclick = function () {
+    console.log('firing');
+    var amount = document.getElementById("amount").value;
+    parseInt(amount);
+    console.log(amount + "Am");
+    var tip = document.getElementById("tip-percent").value;
+    parseInt(tip);
+    console.log(tip + "tip");
+    tipAmount = (amount * tip);
+    tipAmount.toFixed(2);
+    console.log(tipAmount)
+    document.getElementById('answer').innerHTML = tipAmount;
+
+};
 
