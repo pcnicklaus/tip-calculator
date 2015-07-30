@@ -16,10 +16,10 @@ myButton.onclick = function () {
     var tip = document.getElementById("tip-percent").value;
     parseInt(tip);
     console.log(tip + "tip");
-    tipAmount = (amount * tip);
-    tipAmount.toFixed(2);
+    tipAmount = (amount * tip).toFixed(2);
+    // tipAmount.toFixed(2);
     console.log(tipAmount)
-    document.getElementById('answer').innerHTML = tipAmount;
+    document.getElementById('answer').innerHTML = "You should tip $" + tipAmount;
 
 };
 

@@ -1,6 +1,6 @@
 /* add custom styles */
 
-h1, input, button {
+h1, input, button, div {
   text-align: center;
 }
 
@@ -12,10 +12,6 @@ h1 {
 input, button, select, div {
   display: block;
   margin: 0 auto;
-}
-
-generateButton {
-  width: 100%;
 }
 
 input[type="text"], select, #generateButton {
@@ -30,6 +26,10 @@ input[type="text"], select, #generateButton {
   appearance: none;
   box-shadow: none;
   border-radius: none;
+}
+
+#answer {
+  font-size: 4em;
 }
 
 
